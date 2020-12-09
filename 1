@@ -1,0 +1,43 @@
+##row numbers
+for row in range(1, 5):
+  print(row)
+  for col in range (1, 5):
+    print(col, end= '')
+  print()
+
+
+## triangle
+for row in range(1, 11):
+  for col in range(1, row + 1):
+    print('{:3}'.format(col), end = '')
+  print()
+
+
+##firnate
+name = input('plaese enter your name ...')
+print('Hello {}! nice to meet you'.format(name))
+
+
+## nice way to write a list
+num = [2, -3, 4, -5]
+nums = [i for i in num if i > 0]
+print(nums)
+
+
+## a  list of list 
+lists = []
+for i in range(1, 6):
+  lists.append(list(range(1,4)))
+##six list for three numbers
+print(lists)
+
+##random
+import random
+for i in range(5):
+  print(random.randint(1, 25))
+
+
+##shuffle 
+numbers = [i for i in range (0, 26)]
+random.shuffle(numbers)
+print(numbers)
